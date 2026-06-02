@@ -43,8 +43,18 @@ The system encrypts files before storage, generates secure access keys, maintain
 
 ## 🏗️ Architecture
 
-![Uploading WhatsApp Image 2026-04-06 at 9.22.15 AM.jpeg…]()
-
+```text
+User
+  ↓
+React Frontend
+  ↓
+Flask Backend API
+  ↓
+AES-GCM Encryption Layer
+  ↓
+Storage System
+  ↓
+Audit Logs + Expiry Manager
 ```
 
 ## 🛠️ Tech Stack
